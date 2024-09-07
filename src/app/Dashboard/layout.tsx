@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import {  usePathname } from "next/navigation";
 import Sidebar from "../components/Sidebar";
 interface LayoutProps {
   children: React.ReactNode;
@@ -10,9 +9,7 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
 
-  const pathname = usePathname();
-
-  return (
+  return (  
     <div className="flex min-h-screen">
           <Sidebar />
 
