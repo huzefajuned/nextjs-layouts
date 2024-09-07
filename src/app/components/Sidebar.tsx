@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import React from "react";
-import { FaHome, FaUser, FaChartBar, FaCog } from "react-icons/fa"; // For icons
+import { FaHome, FaUser, FaChartBar } from "react-icons/fa"; // For icons
 
 interface sideLinksInterface {
   id: number;

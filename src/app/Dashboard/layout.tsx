@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { FaHome, FaUser, FaChartBar, FaCog } from "react-icons/fa"; // For icons
 import {  usePathname } from "next/navigation";
 import Sidebar from "../components/Sidebar";
 interface LayoutProps {
