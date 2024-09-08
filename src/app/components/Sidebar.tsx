@@ -11,7 +11,7 @@ interface sideLinksInterface {
 }
 
 const side_Links: sideLinksInterface[] = [
-  { id: 1, title: "Home", icon: <FaHome />, path: "" },
+  { id: 1, title: "Home", icon: <FaHome />, path: "/Dashboard" },
   { id: 2, title: "Profile", icon: <FaUser />, path: "/Dashboard/profile" },
   {
     id: 3,
@@ -25,7 +25,7 @@ const Sidebar = () => {
   const router = useRouter();
 
   return (
-    <aside className="w-64 bg-gray-800 text-white flex flex-col">
+    <aside className="w-64 bg-gray-800 text-white flex-col rounded-2xl border-2 border-white">
       <div
         className="text-2xl font-semibold p-4 border-b border-gray-700 cursor-pointer"
         onClick={() => router.push("/")}

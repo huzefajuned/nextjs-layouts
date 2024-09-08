@@ -1,8 +1,8 @@
 
 export default function Home() {
   return (
-    <div className="h-screen w-screen p-5 bg-fuchsia-200 flex flex-col gap-24 items-center">
-      <h2 className="text-2xl font-bold text-black">Home Route!!</h2>
+    <div className="p-1 bg-slate-800 m-2 rounded-2xl border-2 border-white items-center justify-center h-full  flex flex-col ">
+      <h2 className="text-2xl font-bold text-white">Home Route!!</h2>
     </div>
   );
 }
