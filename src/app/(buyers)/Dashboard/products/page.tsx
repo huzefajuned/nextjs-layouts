@@ -1,5 +1,4 @@
 "use client";
-import { useRouter } from "next/navigation";
 import React from "react";
 
 // Fake product data
@@ -31,7 +30,6 @@ const products = [
 ];
 
 const page = () => {
-  const router = useRouter();
   return (
     <div className="bg-gray-800 text-white h-full p-10 overflow-scroll">
       <h1 className="text-3xl font-bold text-center mb-8">Products</h1>
@@ -53,11 +51,9 @@ const page = () => {
               Add to Cart
             </button>
             <button
-             
-
-            //  onClick={()=> router.push({
-            //   pathnae
-            //  })}
+              //  onClick={()=> router.push({
+              //   pathnae
+              //  })}
               className="m-4 bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800 transition"
             >
               View Product

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 // Fake profile data
@@ -12,10 +13,11 @@ const page = () => {
   return (
     <div className="flex flex-col items-center justify-center  h-full w-full text-white">
       <div className="bg-gray-800 rounded-lg shadow-lg p-8 w-80 text-center">
-        <img
+        <Image
           src={profile.avatar}
           alt="Profile Avatar"
           className="w-32 h-32 rounded-full mx-auto mb-4"
+          loading="lazy"
         />
         <h2 className="text-2xl font-bold mb-2">{profile.name}</h2>
         <p className="text-gray-400 mb-4">{profile.email}</p>
